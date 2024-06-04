@@ -1,32 +1,11 @@
-html {
+body {
     font-size: 22px;
-}
-
-main {
-    font-family: monospace;
-}
-
-h1, h2 {
-    color:blue;
-}
-
-.gray {
-    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: papayawhip;
+    color: rgb(0, 0, 0);
 }
 
 p {
-    color: purple!important;
-}
-
-p {
-    color: red;
-}
-
-.highlight {
-    text-transform: uppercase;
-    background: gold;
-}
-
-#second {
-    font-style: italic;
+    color: #333;
 }
