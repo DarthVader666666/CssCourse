@@ -1,0 +1,32 @@
+html {
+    font-size: 22px;
+}
+
+main {
+    font-family: monospace;
+}
+
+h1, h2 {
+    color:blue;
+}
+
+.gray {
+    color: gray;
+}
+
+p {
+    color: purple!important;
+}
+
+p {
+    color: red;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background: gold;
+}
+
+#second {
+    font-style: italic;
+}
