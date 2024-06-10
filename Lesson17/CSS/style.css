@@ -17,6 +17,10 @@ img {
     height: auto;
 }
 
+.card img[alt] {
+    border: 10px, solid red;
+ }
+
 .nowrap {
     white-space: nowrap;
 }
@@ -47,7 +51,7 @@ nav a, nav a:visited {
     color:black;
 }
 
-nav a:hover, nav a:focus {
+nav :is(a:hover, a:focus) {
     color: hsla(0,0%,20%,0.6);
 }
 
@@ -72,6 +76,10 @@ main {
     align-items: center;
 }
 
+.card:target {
+    border: 2px solid purple;
+}
+
 .card figure {
     display: flex;
     flex-flow: column nowrap;
@@ -89,6 +97,35 @@ main {
     text-align: center;
 }
 
+.card figcaption::after {
+    content:'💥';
+    display: block;
+}
+
+.card figcaption::first-letter {
+    font-size: 3rem;
+}
+
+.card p {
+    position: relative;
+}
+
+.card p::before {
+    content: open-quote;
+    font-size: 3em;
+    position: absolute;
+    top: -0.25em;
+    left: -0.5em;
+}
+
+.card p::after {
+    content: close-quote;
+    font-size: 3em;
+    position: absolute;
+    top: -0.25em;
+    right: -0.5em;
+}
+
 nav {
     background-color: white;
     padding: 0.5rem;
@@ -99,7 +136,7 @@ nav {
 }
 
 footer {
-    bottom:0;
+    bottom: 0;
 }
 
 @media screen and (min-width: 576px) {
